@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 23rem;
+  height: 37rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nftImage {
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2rem;
+  border-radius: 0.5rem;
+}
+.imageContainer {
+  position: relative;
+  width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+}
+.textContent {
+  margin: 1.5rem;
+  padding: 0.1rem;
+}
+.textContent h2 {
+  color: white;
+}
+.textContent p {
+  margin-top: 1rem;
+  margin-left: 0.01rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 100;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+.priceAndTimeContainer {
+  margin: 1.5rem;
+  margin-top: -0.6rem;
+  margin-bottom: 0rem;
+  display: flex;
+}
+.ethereumIcon {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nftPrice {
+  margin-left: 0.5rem;
+  color: hsl(178, 100%, 50%);
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.timeLeftIcon {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 4rem;
+}
+.timeLeft {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.01rem;
+  margin-left: 0.4rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.horizontalLine {
+  margin: 1.5rem;
+  border-color: hsl(215, 32%, 27%);
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.creatorContent {
+  margin: 1.6rem;
+  display: flex;
+  margin-top: 1rem;
+}
+.creatorImage {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 2.2rem;
+  border: 1px solid white;
+  border-radius: 2.5rem;
+}
+.creationParagraph {
+  margin-left: 0.8rem;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+
+.creatorContent a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hover Code */
+.textContent h2:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.nftImage:hover {
+  cursor: pointer;
+}
+.creatorContent a:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0.001rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: hsl(178, 100%, 50%);
+}
+.imageContainer:hover .overlay {
+  opacity: 0.3;
+}
+.imageContainer:hover .icon {
+  opacity: 1;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 20rem;
+  }
+  .nftImage {
+    margin-top: 1.2rem;
+    width: 18rem;
+    height: 19.8rem;
+  }
+  .priceAndTimeContainer {
+    margin: 1.5rem;
+    margin-top: -0.6rem;
+    margin-bottom: 0rem;
+    display: flex;
+  }
+
+  .nftPrice {
+    margin-left: 0.5rem;
+    color: hsl(178, 100%, 50%);
+    font-size: x-small;
+  }
+  .timeLeft {
+    font-size: small;
+    margin-left: 0.2rem;
+    color: hsl(215, 51%, 70%);
+  }
+}
