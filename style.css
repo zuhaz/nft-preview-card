@@ -189,4 +189,8 @@ body {
     margin-left: 0.2rem;
     color: hsl(215, 51%, 70%);
   }
+  .imageContainer {
+    width: 18rem;
+    height: 19.8rem;
+  }
 }
