@@ -4,7 +4,7 @@ The second project for [Frontend Mentor](https://www.frontendmentor.io/), was qu
 
 ### Live Example
 
-- [Go to Live Example](https://qr-code-frontendmentor-by-zuhaz.netlify.app/)
+- [Go to Live Example](https://nft-preview-card-frontendmentor-zuhaz.netlify.app/)
 
 ### Screenshot
 
